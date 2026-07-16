@@ -1,0 +1,83 @@
+<UserControl x:Class="ScrumPrep.Views.StatsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Grid MaxWidth="860" Margin="40,28">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" Text="Statistics" Style="{StaticResource PageTitle}" Margin="0,0,0,16"/>
+
+        <TextBlock Grid.Row="1" Text="No sessions yet. Finish a quiz to collect statistics."
+                   Style="{StaticResource MutedText}" FontSize="15"
+                   Visibility="{Binding HasData, Converter={StaticResource InverseBoolToVis}}"/>
+
+        <Grid Grid.Row="2" Visibility="{Binding HasData, Converter={StaticResource BoolToVis}}">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <!-- Trefferquote je Kategorie über alle Sitzungen -->
+            <Border Grid.Row="0" Style="{StaticResource Card}" Margin="0,0,0,16">
+                <StackPanel>
+                    <TextBlock Text="Accuracy per topic (all sessions)" FontSize="16" FontWeight="SemiBold"
+                               Margin="0,0,0,8"/>
+                    <ItemsControl ItemsSource="{Binding CategoryStats}">
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <Grid Margin="0,4">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="320"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <TextBlock Grid.Column="0" Text="{Binding DisplayText}" FontSize="13"
+                                               VerticalAlignment="Center"/>
+                                    <ProgressBar Grid.Column="1" Value="{Binding Percent, Mode=OneWay}" Maximum="100"
+                                                 Height="10" Foreground="{StaticResource AccentBrush}"/>
+                                </Grid>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                    <TextBlock Text="{Binding WeakestCategoryText}" FontSize="13" FontWeight="SemiBold"
+                               Foreground="#EF6C00" Margin="0,10,0,0" TextWrapping="Wrap"/>
+                </StackPanel>
+            </Border>
+
+            <!-- Sitzungs-Historie -->
+            <Border Grid.Row="1" Style="{StaticResource Card}">
+                <DockPanel>
+                    <TextBlock DockPanel.Dock="Top" Text="Session history" FontSize="16" FontWeight="SemiBold"
+                               Margin="0,0,0,8"/>
+                    <ListView ItemsSource="{Binding Sessions}" BorderThickness="0"
+                              ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn Header="Date" Width="150"
+                                                DisplayMemberBinding="{Binding Date}"/>
+                                <GridViewColumn Header="Mode" Width="260"
+                                                DisplayMemberBinding="{Binding Mode}"/>
+                                <GridViewColumn Header="Score" Width="90"
+                                                DisplayMemberBinding="{Binding Score}"/>
+                                <GridViewColumn Header="Percent" Width="90"
+                                                DisplayMemberBinding="{Binding Percent}"/>
+                                <GridViewColumn Header="Result" Width="90"
+                                                DisplayMemberBinding="{Binding PassInfo}"/>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                </DockPanel>
+            </Border>
+        </Grid>
+
+        <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,16,0,0">
+            <Button Content="Clear History" Style="{StaticResource SecondaryButton}" Margin="0,0,8,0"
+                    Command="{Binding ClearCommand}"/>
+            <Button Content="Back to Menu" Style="{StaticResource PrimaryButton}"
+                    Command="{Binding HomeCommand}"/>
+        </StackPanel>
+    </Grid>
+</UserControl>

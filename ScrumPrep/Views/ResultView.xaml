@@ -1,0 +1,101 @@
+<UserControl x:Class="ScrumPrep.Views.ResultView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Grid MaxWidth="860" Margin="40,28">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" Text="{Binding Title}" Style="{StaticResource PageTitle}" Margin="0,0,0,16"/>
+
+        <!-- Gesamtergebnis + Kategorien -->
+        <Border Grid.Row="1" Style="{StaticResource Card}" Margin="0,0,0,16">
+            <StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="{Binding ScoreText}" FontSize="20" FontWeight="SemiBold"
+                               VerticalAlignment="Center"/>
+                    <Border CornerRadius="4" Padding="10,4" Margin="16,0,0,0" VerticalAlignment="Center"
+                            Visibility="{Binding IsExam, Converter={StaticResource BoolToVis}}">
+                        <Border.Style>
+                            <Style TargetType="Border">
+                                <Setter Property="Background" Value="{StaticResource WrongBrush}"/>
+                                <Style.Triggers>
+                                    <DataTrigger Binding="{Binding Passed}" Value="True">
+                                        <Setter Property="Background" Value="{StaticResource CorrectBrush}"/>
+                                    </DataTrigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Border.Style>
+                        <TextBlock Text="{Binding PassFailText}" Foreground="White" FontWeight="Bold"/>
+                    </Border>
+                </StackPanel>
+                <TextBlock Text="{Binding PassHint}" Style="{StaticResource MutedText}" Margin="0,4,0,12"
+                           Visibility="{Binding IsExam, Converter={StaticResource BoolToVis}}"/>
+
+                <ItemsControl ItemsSource="{Binding CategoryStats}" Margin="0,8,0,0">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <Grid Margin="0,4">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="320"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <TextBlock Grid.Column="0" Text="{Binding DisplayText}" FontSize="13"
+                                           VerticalAlignment="Center"/>
+                                <ProgressBar Grid.Column="1" Value="{Binding Percent, Mode=OneWay}" Maximum="100"
+                                             Height="10" Foreground="{StaticResource AccentBrush}"/>
+                            </Grid>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </StackPanel>
+        </Border>
+
+        <!-- Falsch beantwortete Fragen -->
+        <ScrollViewer Grid.Row="2" VerticalScrollBarVisibility="Auto">
+            <StackPanel>
+                <TextBlock Text="Review your mistakes" FontSize="16" FontWeight="SemiBold" Margin="0,0,0,8"
+                           Visibility="{Binding HasMissedQuestions, Converter={StaticResource BoolToVis}}"/>
+                <TextBlock Text="No mistakes – great job!" FontSize="15"
+                           Foreground="{StaticResource CorrectBrush}" FontWeight="SemiBold"
+                           Visibility="{Binding HasMissedQuestions, Converter={StaticResource InverseBoolToVis}}"/>
+                <ItemsControl ItemsSource="{Binding MissedQuestions}">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <Border Style="{StaticResource Card}" Margin="0,0,0,10">
+                                <StackPanel>
+                                    <TextBlock Text="{Binding Category}" FontSize="11" FontWeight="SemiBold"
+                                               Foreground="{StaticResource AccentBrush}"/>
+                                    <TextBlock Text="{Binding QuestionText}" FontWeight="SemiBold"
+                                               TextWrapping="Wrap" Margin="0,4,0,8"/>
+                                    <TextBlock FontSize="13" TextWrapping="Wrap">
+                                        <Run Text="Your answer:" FontWeight="SemiBold"
+                                             Foreground="{StaticResource WrongBrush}"/>
+                                        <Run Text="{Binding YourAnswer, Mode=OneWay}"/>
+                                    </TextBlock>
+                                    <TextBlock FontSize="13" TextWrapping="Wrap" Margin="0,4,0,0">
+                                        <Run Text="Correct answer:" FontWeight="SemiBold"
+                                             Foreground="{StaticResource CorrectBrush}"/>
+                                        <Run Text="{Binding CorrectAnswer, Mode=OneWay}"/>
+                                    </TextBlock>
+                                    <TextBlock Text="{Binding Explanation}" Style="{StaticResource MutedText}"
+                                               FontSize="13" TextWrapping="Wrap" Margin="0,8,0,0"/>
+                                </StackPanel>
+                            </Border>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </StackPanel>
+        </ScrollViewer>
+
+        <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,16,0,0">
+            <Button Content="Statistics" Style="{StaticResource SecondaryButton}" Margin="0,0,8,0"
+                    Command="{Binding StatsCommand}"/>
+            <Button Content="Back to Menu" Style="{StaticResource PrimaryButton}"
+                    Command="{Binding HomeCommand}"/>
+        </StackPanel>
+    </Grid>
+</UserControl>

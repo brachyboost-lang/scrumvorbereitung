@@ -1,0 +1,65 @@
+<UserControl x:Class="ScrumPrep.Views.HomeView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Grid MaxWidth="900" Margin="40">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Margin="0,0,0,24">
+            <TextBlock Text="ScrumPrep" Style="{StaticResource PageTitle}" FontSize="32"/>
+            <TextBlock Style="{StaticResource MutedText}" FontSize="15" Margin="0,6,0,0">
+                <Run Text="Preparation for the Professional Scrum Master I (PSM I) assessment –"/>
+                <Run Text="{Binding QuestionCount, Mode=OneWay}"/>
+                <Run Text="questions based on the Scrum Guide 2020."/>
+            </TextBlock>
+        </StackPanel>
+
+        <UniformGrid Grid.Row="1" Columns="2" VerticalAlignment="Top">
+
+            <Border Style="{StaticResource Card}" Margin="0,0,10,20">
+                <StackPanel>
+                    <TextBlock Text="Exam Simulation" FontSize="18" FontWeight="SemiBold"/>
+                    <TextBlock Style="{StaticResource MutedText}" TextWrapping="Wrap" Margin="0,8,0,16"
+                               Text="80 random questions, 60 minutes, 85% to pass – just like the real assessment. No feedback until the end."/>
+                    <Button Content="Start Exam" Style="{StaticResource PrimaryButton}"
+                            HorizontalAlignment="Left" Command="{Binding StartExamCommand}"/>
+                </StackPanel>
+            </Border>
+
+            <Border Style="{StaticResource Card}" Margin="10,0,0,20">
+                <StackPanel>
+                    <TextBlock Text="Learn Mode" FontSize="18" FontWeight="SemiBold"/>
+                    <TextBlock Style="{StaticResource MutedText}" TextWrapping="Wrap" Margin="0,8,0,16"
+                               Text="Work through all questions in random order. Every answer is revealed immediately, including an explanation."/>
+                    <Button Content="Start Learning" Style="{StaticResource PrimaryButton}"
+                            HorizontalAlignment="Left" Command="{Binding StartLearnCommand}"/>
+                </StackPanel>
+            </Border>
+
+            <Border Style="{StaticResource Card}" Margin="0,0,10,20">
+                <StackPanel>
+                    <TextBlock Text="Topic Training" FontSize="18" FontWeight="SemiBold"/>
+                    <TextBlock Style="{StaticResource MutedText}" TextWrapping="Wrap" Margin="0,8,0,12"
+                               Text="Practice one topic area with immediate feedback."/>
+                    <ComboBox ItemsSource="{Binding Categories}" SelectedItem="{Binding SelectedCategory}"
+                              Width="260" HorizontalAlignment="Left" Margin="0,0,0,12" Padding="8,6"/>
+                    <Button Content="Start Training" Style="{StaticResource PrimaryButton}"
+                            HorizontalAlignment="Left" Command="{Binding StartTopicCommand}"/>
+                </StackPanel>
+            </Border>
+
+            <Border Style="{StaticResource Card}" Margin="10,0,0,20">
+                <StackPanel>
+                    <TextBlock Text="Statistics" FontSize="18" FontWeight="SemiBold"/>
+                    <TextBlock Style="{StaticResource MutedText}" TextWrapping="Wrap" Margin="0,8,0,16"
+                               Text="Your session history and accuracy per topic – see where you still need practice."/>
+                    <Button Content="Show Statistics" Style="{StaticResource SecondaryButton}"
+                            HorizontalAlignment="Left" Command="{Binding ShowStatsCommand}"/>
+                </StackPanel>
+            </Border>
+
+        </UniformGrid>
+    </Grid>
+</UserControl>
