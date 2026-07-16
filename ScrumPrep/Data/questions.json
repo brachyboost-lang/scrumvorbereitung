@@ -994,5 +994,297 @@
     ],
     "correct": [1],
     "explanation": "The moment a Product Backlog item meets the Definition of Done, an Increment is born. The Sprint Review is not an acceptance gate."
+  },
+  {
+    "id": 81,
+    "category": "Scrum Theory & Values",
+    "text": "What does the Scrum value of commitment mean?",
+    "options": [
+      "The Scrum Team guarantees to deliver all selected Product Backlog items",
+      "The Scrum Team commits to achieving its goals and to supporting each other",
+      "Each Developer commits to working overtime when needed",
+      "The Product Owner commits to a fixed release date"
+    ],
+    "correct": [1],
+    "explanation": "The Scrum Team commits to achieving its goals and to supporting each other. Commitment is about dedication to the team and its goals, not a guarantee of scope."
+  },
+  {
+    "id": 82,
+    "category": "Scrum Theory & Values",
+    "text": "What does the Scrum value of focus mean?",
+    "options": [
+      "Developers should not talk to stakeholders",
+      "The team's primary focus is on the work of the Sprint to make the best possible progress toward its goals",
+      "Each Developer focuses on exactly one task per day",
+      "The team focuses only on writing code"
+    ],
+    "correct": [1],
+    "explanation": "The Scrum Team's primary focus is on the work of the Sprint to make the best possible progress toward these goals."
+  },
+  {
+    "id": 83,
+    "category": "Scrum Theory & Values",
+    "text": "What does the Scrum value of openness require?",
+    "options": [
+      "The Scrum Team and its stakeholders are open about the work and the challenges",
+      "All meetings are open to the public",
+      "The source code must be open source",
+      "The team must accept every stakeholder request"
+    ],
+    "correct": [0],
+    "explanation": "The Scrum Team and its stakeholders are open about the work and the challenges."
+  },
+  {
+    "id": 84,
+    "category": "Scrum Theory & Values",
+    "text": "What does the Scrum value of respect mean?",
+    "options": [
+      "Junior members follow the decisions of senior members",
+      "Scrum Team members respect each other to be capable, independent people, and are respected as such by the people with whom they work",
+      "The team always agrees with the Product Owner",
+      "Managers are treated with special deference"
+    ],
+    "correct": [1],
+    "explanation": "Scrum Team members respect each other to be capable, independent people, and are respected as such by the people with whom they work."
+  },
+  {
+    "id": 85,
+    "category": "Scrum Theory & Values",
+    "text": "The Developers discover a serious technical problem early in the Sprint but keep it to themselves until the Sprint Review. Which Scrum values did they fail to live? (Choose two.)",
+    "options": ["Openness", "Focus", "Courage", "Respect"],
+    "correct": [0, 2],
+    "explanation": "Being open about the work and its challenges (openness) and having the courage to raise difficult topics early would have allowed the team to inspect and adapt in time."
+  },
+  {
+    "id": 86,
+    "category": "Scrum Theory & Values",
+    "text": "In which domains can Scrum be applied?",
+    "options": [
+      "Only software development",
+      "Only IT projects",
+      "Many domains of complex work, e.g. products, services, research, schools, and government",
+      "Only projects with fewer than ten people in total"
+    ],
+    "correct": [2],
+    "explanation": "Scrum has been used extensively beyond software: for products, services, research, autonomous vehicles, schools, government, marketing, and more. It applies wherever complex work is done."
+  },
+  {
+    "id": 87,
+    "category": "Scrum Theory & Values",
+    "text": "Why must all elements of the Scrum framework be implemented?",
+    "options": [
+      "Because Scrum.org audits teams for compliance",
+      "Each element serves a specific purpose that is essential to the overall value and results realized with Scrum",
+      "Because partial Scrum is illegal",
+      "Only the events are mandatory; the artifacts are optional"
+    ],
+    "correct": [1],
+    "explanation": "Each element of the framework serves a specific purpose that is essential to the overall value and results realized with Scrum."
+  },
+  {
+    "id": 88,
+    "category": "Scrum Theory & Values",
+    "text": "A team hides unfinished work in a hard-to-find branch so the Sprint looks successful. Which pillar of empiricism is undermined the most?",
+    "options": ["Transparency", "Adaptation", "Velocity", "Commitment"],
+    "correct": [0],
+    "explanation": "Hiding the true state of the work destroys transparency. Without transparency, inspection is misleading and decisions may diminish value and increase risk."
+  },
+  {
+    "id": 89,
+    "category": "Scrum Theory & Values",
+    "text": "Why must Scrum artifacts be transparent?",
+    "options": [
+      "Because significant decisions are based on the perceived state of the artifacts",
+      "So management can track individual performance",
+      "Because auditors require it",
+      "So the artifacts can be printed for reports"
+    ],
+    "correct": [0],
+    "explanation": "Decisions to optimize value and control risk are made based on the perceived state of the artifacts. Low transparency can lead to decisions that diminish value and increase risk."
+  },
+  {
+    "id": 90,
+    "category": "Scrum Theory & Values",
+    "text": "How often should Scrum artifacts and progress be inspected?",
+    "options": [
+      "Once at the end of each release",
+      "Continuously by an external quality department",
+      "Frequently and diligently, but not so often that inspection gets in the way of the work",
+      "Only when problems occur"
+    ],
+    "correct": [2],
+    "explanation": "The Scrum artifacts and the progress toward agreed goals must be inspected frequently and diligently. Scrum provides cadence in the form of its five events so inspection does not get in the way of work."
+  },
+  {
+    "id": 91,
+    "category": "Scrum Theory & Values",
+    "text": "Why are Scrum events timeboxed (given a maximum duration)?",
+    "options": [
+      "To ensure an appropriate amount of time is spent without allowing waste in the process",
+      "Because meeting rooms are usually booked by the hour",
+      "To force teams to talk faster",
+      "So managers can plan their attendance"
+    ],
+    "correct": [0],
+    "explanation": "Timeboxes ensure an appropriate amount of time is spent on each event without allowing waste. Events create regularity and minimize the need for meetings not defined in Scrum."
+  },
+  {
+    "id": 92,
+    "category": "Scrum Theory & Values",
+    "text": "Management asks for a detailed Gantt chart covering the next twelve months. What is the most Scrum-consistent response?",
+    "options": [
+      "Provide the Gantt chart; Scrum requires detailed long-term plans",
+      "Explain that in complex work progress is best inspected empirically, e.g. through Done Increments and the Product Backlog",
+      "Refuse to communicate with management",
+      "Let the Scrum Master create the chart secretly"
+    ],
+    "correct": [1],
+    "explanation": "Scrum is based on empiricism: in complex environments, what will happen is unknown. Transparency comes from the artifacts and frequent inspection of real Increments, not from predictive long-term charts."
+  },
+  {
+    "id": 93,
+    "category": "Scrum Theory & Values",
+    "text": "Is it possible to implement only parts of Scrum?",
+    "options": [
+      "No, tools will prevent it",
+      "Yes, and the result is a lighter version of Scrum",
+      "Yes, it is possible, but the result is not Scrum",
+      "Only with written approval from Scrum.org"
+    ],
+    "correct": [2],
+    "explanation": "Although implementing only parts of Scrum is possible, the result is not Scrum. Scrum exists only in its entirety."
+  },
+  {
+    "id": 94,
+    "category": "Scrum Theory & Values",
+    "text": "According to the Scrum Guide, when does adaptation become more difficult?",
+    "options": [
+      "When the Sprint is shorter than two weeks",
+      "When the people involved are not empowered or self-managing",
+      "When the team uses physical task boards",
+      "When stakeholders attend the Sprint Review"
+    ],
+    "correct": [1],
+    "explanation": "Adaptation becomes more difficult when the people involved are not empowered or self-managing. A Scrum Team is expected to adapt the moment it learns anything new through inspection."
+  },
+  {
+    "id": 95,
+    "category": "Scrum Theory & Values",
+    "text": "Which of the following is NOT one of the three pillars of empiricism?",
+    "options": ["Transparency", "Commitment", "Inspection", "Adaptation"],
+    "correct": [1],
+    "explanation": "The three pillars are transparency, inspection, and adaptation. Commitment is one of the five Scrum values, not a pillar."
+  },
+  {
+    "id": 96,
+    "category": "Scrum Theory & Values",
+    "text": "Two Developers argue about whether pair programming must be used because 'Scrum requires it'. What is true?",
+    "options": [
+      "Scrum prescribes pair programming for all complex work",
+      "Scrum is a framework within which people can employ various processes and techniques; specific engineering practices are not prescribed",
+      "The Scrum Master decides which engineering practices are mandatory",
+      "Engineering practices must be approved by the Product Owner"
+    ],
+    "correct": [1],
+    "explanation": "Scrum is purposefully incomplete and does not prescribe specific engineering practices. Teams choose the processes, techniques, and methods that work best for them."
+  },
+  {
+    "id": 97,
+    "category": "Scrum Theory & Values",
+    "text": "Why is Scrum a good fit for complex problems?",
+    "options": [
+      "Because in complex work more is unknown than known, and empiricism allows learning through frequent inspection and adaptation",
+      "Because complexity can be eliminated with better upfront analysis",
+      "Because Scrum reduces the number of people involved",
+      "Because Scrum guarantees fixed scope and fixed dates"
+    ],
+    "correct": [0],
+    "explanation": "In complex environments, what will happen is unknown. Scrum's empirical, iterative-incremental approach turns this uncertainty into frequent learning cycles."
+  },
+  {
+    "id": 98,
+    "category": "Scrum Theory & Values",
+    "text": "A stakeholder demands a fixed-scope, fixed-date plan for the next year before the team may start. What is the empirical counter-argument?",
+    "options": [
+      "Scrum teams never plan",
+      "In complex work, upfront predictions are unreliable; Scrum controls risk by delivering Done Increments and adapting based on observed results",
+      "The plan should be made by the Scrum Master instead",
+      "The team should double all estimates to be safe"
+    ],
+    "correct": [1],
+    "explanation": "Scrum employs an iterative, incremental approach to optimize predictability and control risk. Forecasts are possible, but they do not replace the importance of empiricism."
+  },
+  {
+    "id": 99,
+    "category": "Scrum Theory & Values",
+    "text": "What do the Scrum values give direction to?",
+    "options": [
+      "The company's marketing strategy",
+      "The Scrum Team's work, actions, and behavior",
+      "The format of the Product Backlog",
+      "The choice of development tools"
+    ],
+    "correct": [1],
+    "explanation": "The Scrum values give direction to the Scrum Team with regard to their work, actions, and behavior. Decisions, steps taken, and the way Scrum is used should reinforce these values."
+  },
+  {
+    "id": 100,
+    "category": "Scrum Theory & Values",
+    "text": "What does successful use of Scrum depend on?",
+    "options": [
+      "Strict enforcement of the rules by management",
+      "People becoming more proficient in living the five Scrum values",
+      "Using a certified Scrum tool",
+      "Having at least one certified Scrum Master per team"
+    ],
+    "correct": [1],
+    "explanation": "Successful use of Scrum depends on people becoming more proficient in living the five values: commitment, focus, openness, respect, and courage."
+  },
+  {
+    "id": 101,
+    "category": "Scrum Theory & Values",
+    "text": "A Developer privately disagrees with a popular technical decision but stays silent to avoid conflict. Which Scrum value would most help here?",
+    "options": ["Courage", "Focus", "Commitment", "Efficiency"],
+    "correct": [0],
+    "explanation": "Scrum Team members need the courage to do the right thing and to work on tough problems, which includes voicing disagreement openly."
+  },
+  {
+    "id": 102,
+    "category": "Scrum Theory & Values",
+    "text": "How does Scrum reduce the need for meetings not defined in the framework?",
+    "options": [
+      "By forbidding all other meetings",
+      "The five events create regularity and provide formal opportunities to inspect and adapt",
+      "By making the Scrum Master attend all external meetings",
+      "By replacing communication with documentation"
+    ],
+    "correct": [1],
+    "explanation": "The events are used in Scrum to create regularity and to minimize the need for meetings not defined in Scrum."
+  },
+  {
+    "id": 103,
+    "category": "Scrum Theory & Values",
+    "text": "What is the effect of low transparency in artifacts?",
+    "options": [
+      "It has no effect as long as the team communicates verbally",
+      "Decisions based on them can diminish value and increase risk",
+      "It only affects the Scrum Master's work",
+      "It speeds up decision-making"
+    ],
+    "correct": [1],
+    "explanation": "Artifacts that have low transparency can lead to decisions that diminish value and increase risk."
+  },
+  {
+    "id": 104,
+    "category": "Scrum Theory & Values",
+    "text": "Which statement about Scrum and existing practices is correct?",
+    "options": [
+      "Scrum requires teams to abandon all existing practices",
+      "Scrum makes visible the relative efficacy of current management, environment, and work techniques, so that improvements can be made",
+      "Scrum certifies which practices are allowed",
+      "Existing practices automatically satisfy the Definition of Done"
+    ],
+    "correct": [1],
+    "explanation": "Scrum wraps around existing practices and makes their relative efficacy visible, so that improvements can be made."
   }
 ]
