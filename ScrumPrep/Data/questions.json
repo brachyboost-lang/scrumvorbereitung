@@ -1286,5 +1286,381 @@
     ],
     "correct": [1],
     "explanation": "Scrum wraps around existing practices and makes their relative efficacy visible, so that improvements can be made."
+  },
+  {
+    "id": 105,
+    "category": "Scrum Team",
+    "text": "Who helps employees and stakeholders understand and enact an empirical approach for complex work?",
+    "options": ["The Product Owner", "The Scrum Master", "The Developers", "Human Resources"],
+    "correct": [1],
+    "explanation": "Serving the organization, the Scrum Master helps employees and stakeholders understand and enact an empirical approach for complex work."
+  },
+  {
+    "id": 106,
+    "category": "Scrum Team",
+    "text": "The Product Owner is on vacation. A stakeholder asks the Developers to reorder the Product Backlog for an urgent request. What should happen?",
+    "options": [
+      "The Developers reorder the backlog since the request is urgent",
+      "The Scrum Master reorders the backlog as the Product Owner's deputy",
+      "The change waits for the Product Owner or whoever the Product Owner delegated backlog management to",
+      "The stakeholder reorders the backlog directly"
+    ],
+    "correct": [2],
+    "explanation": "Ordering the Product Backlog is part of the Product Owner accountability. The Product Owner may delegate the work, but stakeholders and Developers do not simply reorder it themselves."
+  },
+  {
+    "id": 107,
+    "category": "Scrum Team",
+    "text": "Who attends Sprint Planning?",
+    "options": [
+      "Only the Developers",
+      "Only the Developers and the Product Owner",
+      "The entire Scrum Team; they may invite others to provide advice",
+      "The Scrum Master and the stakeholders"
+    ],
+    "correct": [2],
+    "explanation": "Sprint Planning is an event for the whole Scrum Team. The team may invite other people to attend to provide advice."
+  },
+  {
+    "id": 108,
+    "category": "Scrum Team",
+    "text": "Who decides which technical practices and tools the Developers use to build the Increment?",
+    "options": [
+      "The Scrum Master",
+      "The Developers themselves, as a self-managing team",
+      "The Product Owner",
+      "The enterprise architecture board"
+    ],
+    "correct": [1],
+    "explanation": "Scrum Teams are self-managing: they internally decide who does what, when, and how. Technical decisions belong to the Developers."
+  },
+  {
+    "id": 109,
+    "category": "Scrum Team",
+    "text": "In which ways does the Scrum Master serve the Developers? (Choose three.)",
+    "options": [
+      "Coaching them in self-management and cross-functionality",
+      "Helping them focus on creating high-value Increments that meet the Definition of Done",
+      "Assigning tasks to balance the workload",
+      "Causing the removal of impediments to their progress",
+      "Writing their status reports"
+    ],
+    "correct": [0, 1, 3],
+    "explanation": "The Scrum Master serves the Developers by coaching self-management and cross-functionality, helping them focus on high-value Increments, causing the removal of impediments, and ensuring all events take place, are positive, productive, and within the timebox."
+  },
+  {
+    "id": 110,
+    "category": "Scrum Team",
+    "text": "Can the Scrum Master also work on Sprint Backlog items as a Developer?",
+    "options": [
+      "No, the accountabilities must never be combined",
+      "Yes, Scrum does not prohibit combining accountabilities, though it can create conflicting priorities",
+      "Only in teams of fewer than five people",
+      "Only with the Product Owner's written approval"
+    ],
+    "correct": [1],
+    "explanation": "Scrum defines accountabilities, not full-time positions. One person may hold more than one accountability, although combining them can create tension."
+  },
+  {
+    "id": 111,
+    "category": "Scrum Team",
+    "text": "What must the organization do for the Product Owner to succeed?",
+    "options": [
+      "Provide a budget assistant",
+      "Respect the Product Owner's decisions",
+      "Approve every Product Backlog change in a change board",
+      "Assign at least two deputies"
+    ],
+    "correct": [1],
+    "explanation": "For Product Owners to succeed, the entire organization must respect their decisions. The decisions are visible in the content and ordering of the Product Backlog and through the inspectable Increment at the Sprint Review."
+  },
+  {
+    "id": 112,
+    "category": "Scrum Team",
+    "text": "Some Developers say testing is not their job because they were hired as programmers. What is the Scrum perspective?",
+    "options": [
+      "They are right; testing belongs to a QA department",
+      "The Developers as a whole need all the skills to create a Done Increment, and they share accountability for quality",
+      "The Scrum Master must do the testing",
+      "Testing should be moved to a separate Sprint"
+    ],
+    "correct": [1],
+    "explanation": "Scrum recognizes no sub-teams or specialized titles within the Developers. The team is cross-functional and jointly accountable for creating an Increment that meets the Definition of Done."
+  },
+  {
+    "id": 113,
+    "category": "Scrum Team",
+    "text": "A Scrum Team has grown to 15 people and communication is suffering. What does the Scrum Guide suggest?",
+    "options": [
+      "Appoint team leads for sub-groups",
+      "Reorganize into multiple cohesive Scrum Teams, each focused on the same product, sharing the same Product Goal, Product Backlog, and Product Owner",
+      "Extend the Daily Scrum to 30 minutes",
+      "Remove the five least productive members"
+    ],
+    "correct": [1],
+    "explanation": "If Scrum Teams become too large, they should consider reorganizing into multiple cohesive Scrum Teams, each focused on the same product and sharing the same Product Goal, Product Backlog, and Product Owner."
+  },
+  {
+    "id": 114,
+    "category": "Scrum Team",
+    "text": "Who holds the Developers accountable as professionals?",
+    "options": [
+      "The Scrum Master",
+      "The Product Owner",
+      "They hold each other accountable",
+      "The department manager"
+    ],
+    "correct": [2],
+    "explanation": "The Developers hold each other accountable as professionals."
+  },
+  {
+    "id": 115,
+    "category": "Scrum Team",
+    "text": "A new Developer joins the team in the middle of a Sprint. What is the most likely short-term effect?",
+    "options": [
+      "Productivity immediately increases",
+      "The Sprint must be cancelled",
+      "Productivity may temporarily dip while the team re-forms; the team self-manages the integration",
+      "The Sprint is extended by one week"
+    ],
+    "correct": [2],
+    "explanation": "Changing team composition typically causes a short-term productivity dip. The self-managing team integrates the new member; the Sprint continues normally."
+  },
+  {
+    "id": 116,
+    "category": "Scrum Team",
+    "text": "Who is accountable for developing and explicitly communicating the Product Goal?",
+    "options": ["The Scrum Master", "The Product Owner", "The Developers", "The stakeholders"],
+    "correct": [1],
+    "explanation": "Developing and explicitly communicating the Product Goal is part of the Product Owner's accountability for effective Product Backlog management."
+  },
+  {
+    "id": 117,
+    "category": "Scrum Team",
+    "text": "What is the Scrum Master's role in the Daily Scrum?",
+    "options": [
+      "Leading the meeting and asking each Developer the three questions",
+      "Taking minutes for management",
+      "Ensuring the event takes place and stays within the timebox, but the Developers run it themselves",
+      "Selecting which impediments are worth mentioning"
+    ],
+    "correct": [2],
+    "explanation": "The Daily Scrum belongs to the Developers. The Scrum Master ensures the event takes place, is positive and productive, and stays within its timebox, but does not run it unless working as a Developer."
+  },
+  {
+    "id": 118,
+    "category": "Scrum Team",
+    "text": "How is the Scrum Master's leadership different from traditional management?",
+    "options": [
+      "There is no difference",
+      "The Scrum Master serves the team and organization as a true leader rather than directing people",
+      "The Scrum Master has hire-and-fire authority",
+      "The Scrum Master approves vacation requests"
+    ],
+    "correct": [1],
+    "explanation": "Scrum Masters are true leaders who serve the Scrum Team and the larger organization. They lead through coaching, facilitation, and removing organizational barriers, not through directive authority."
+  },
+  {
+    "id": 119,
+    "category": "Scrum Team",
+    "text": "Who is accountable for instilling quality into the Increment?",
+    "options": [
+      "The QA department",
+      "The Developers, by adhering to the Definition of Done",
+      "The Scrum Master",
+      "External auditors"
+    ],
+    "correct": [1],
+    "explanation": "The Developers are accountable for instilling quality by adhering to a Definition of Done."
+  },
+  {
+    "id": 120,
+    "category": "Scrum Team",
+    "text": "Must the Product Owner personally write all Product Backlog items?",
+    "options": [
+      "Yes, only the Product Owner may write items",
+      "No, others may write them, but the Product Owner remains accountable for the Product Backlog",
+      "No, writing items is the Scrum Master's job",
+      "Yes, unless the team is distributed"
+    ],
+    "correct": [1],
+    "explanation": "The Product Owner may delegate Product Backlog work, including writing items, to others, but remains accountable."
+  },
+  {
+    "id": 121,
+    "category": "Scrum Team",
+    "text": "Three stakeholders give the team conflicting priorities. Who resolves the conflict?",
+    "options": [
+      "The Developers vote on it",
+      "The Scrum Master mediates and decides",
+      "The Product Owner decides the ordering of the Product Backlog",
+      "The most senior stakeholder wins"
+    ],
+    "correct": [2],
+    "explanation": "The Product Owner is the single person accountable for ordering the Product Backlog and maximizing value, and the organization must respect these decisions."
+  },
+  {
+    "id": 122,
+    "category": "Scrum Team",
+    "text": "Which statement about titles within the Developers is correct?",
+    "options": [
+      "Scrum requires the titles frontend, backend, and tester",
+      "Scrum recognizes no titles for the Developers and no sub-teams, regardless of the work being performed",
+      "Titles are assigned by the Scrum Master",
+      "Each Developer must have a specialty title for the Sprint Backlog"
+    ],
+    "correct": [1],
+    "explanation": "Within a Scrum Team there are no sub-teams or hierarchies, and Scrum recognizes no titles for Developers other than Developer."
+  },
+  {
+    "id": 123,
+    "category": "Scrum Team",
+    "text": "During the Sprint, who assigns the individual work items to each Developer?",
+    "options": [
+      "The Scrum Master",
+      "The Product Owner",
+      "No one; the Developers self-manage and decide internally who does what",
+      "The team lead"
+    ],
+    "correct": [2],
+    "explanation": "Scrum Teams are self-managing. The Developers internally decide who does what, when, and how; no one assigns work to them."
+  },
+  {
+    "id": 124,
+    "category": "Scrum Team",
+    "text": "How should a Scrum Master ideally handle impediments the Developers could resolve themselves?",
+    "options": [
+      "Solve every impediment personally to protect the team",
+      "Encourage and coach the team to resolve them, stepping in for impediments beyond the team's ability",
+      "Report them to management",
+      "Add them to the Product Backlog"
+    ],
+    "correct": [1],
+    "explanation": "The Scrum Master causes the removal of impediments. Coaching the team toward self-management means the team handles what it can, while the Scrum Master tackles organizational blockers."
+  },
+  {
+    "id": 125,
+    "category": "Scrum Team",
+    "text": "HR asks the Scrum Master to rate each Developer's individual performance. What is the most appropriate reaction?",
+    "options": [
+      "Provide detailed ratings based on Daily Scrum observations",
+      "Explain that Scrum focuses on team accountability and coach the organization on the implications of individual metrics",
+      "Ask the Product Owner to do the rating instead",
+      "Rate everyone equally to be fair"
+    ],
+    "correct": [1],
+    "explanation": "Scrum's accountability for the Increment lies with the whole team. The Scrum Master serves the organization by coaching it in approaches that support, rather than undermine, team-based empirical work."
+  },
+  {
+    "id": 126,
+    "category": "Scrum Team",
+    "text": "Who is accountable if the product consistently fails to deliver value?",
+    "options": [
+      "The Developers",
+      "The Scrum Master",
+      "The Product Owner",
+      "The stakeholders"
+    ],
+    "correct": [2],
+    "explanation": "The Product Owner is accountable for maximizing the value of the product resulting from the work of the Scrum Team."
+  },
+  {
+    "id": 127,
+    "category": "Scrum Team",
+    "text": "The Developers want to exclude the Product Owner from the Daily Scrum even though the Product Owner is actively working on Sprint Backlog items. What applies?",
+    "options": [
+      "The Product Owner may never attend the Daily Scrum",
+      "If the Product Owner is actively working on items in the Sprint Backlog, they participate as a Developer",
+      "The Product Owner attends but may not speak",
+      "The Scrum Master decides who attends"
+    ],
+    "correct": [1],
+    "explanation": "If the Product Owner or Scrum Master are actively working on items in the Sprint Backlog, they participate in the Daily Scrum as Developers."
+  },
+  {
+    "id": 128,
+    "category": "Scrum Team",
+    "text": "Who determines how much work the Developers can take on in a Sprint?",
+    "options": [
+      "The Product Owner based on stakeholder pressure",
+      "Only the Developers themselves",
+      "The Scrum Master based on velocity",
+      "Management based on the roadmap"
+    ],
+    "correct": [1],
+    "explanation": "Selecting how much can be completed within a Sprint may be challenging, but only the Developers can decide it."
+  },
+  {
+    "id": 129,
+    "category": "Scrum Team",
+    "text": "What organizational unit does the Scrum Guide call the fundamental unit of Scrum?",
+    "options": ["The department", "The Scrum Team", "The guild", "The project"],
+    "correct": [1],
+    "explanation": "The fundamental unit of Scrum is a small team of people, a Scrum Team."
+  },
+  {
+    "id": 130,
+    "category": "Scrum Team",
+    "text": "Which activities is the Scrum Master responsible for regarding Scrum adoption in the organization? (Choose two.)",
+    "options": [
+      "Leading, training, and coaching the organization in its Scrum adoption",
+      "Planning and advising Scrum implementations within the organization",
+      "Rewriting the company's HR policies",
+      "Selecting which products the company builds"
+    ],
+    "correct": [0, 1],
+    "explanation": "Serving the organization, the Scrum Master leads, trains, and coaches the Scrum adoption and plans and advises Scrum implementations."
+  },
+  {
+    "id": 131,
+    "category": "Scrum Team",
+    "text": "Why does the entire Scrum Team attend the Sprint Retrospective?",
+    "options": [
+      "It doesn't; only the Developers attend",
+      "Because the whole team inspects how the Sprint went and plans improvements together",
+      "So the Product Owner can grade the Developers",
+      "Because stakeholders require a report"
+    ],
+    "correct": [1],
+    "explanation": "The Sprint Retrospective is for the entire Scrum Team: Product Owner, Scrum Master, and Developers inspect individuals, interactions, processes, tools, and the Definition of Done together."
+  },
+  {
+    "id": 132,
+    "category": "Scrum Team",
+    "text": "The Developers realize they lack a skill needed for several upcoming Product Backlog items. What is the best response?",
+    "options": [
+      "Refuse those items permanently",
+      "Acquire or develop the needed skills within the team, e.g. through learning or bringing in a new member",
+      "Create a specialist sub-team",
+      "Transfer the items to another department"
+    ],
+    "correct": [1],
+    "explanation": "Cross-functionality means the team as a whole has all the skills necessary to create value. Self-managing teams close skill gaps themselves, e.g. by learning or changing composition."
+  },
+  {
+    "id": 133,
+    "category": "Scrum Team",
+    "text": "Who is accountable for stakeholder collaboration around the product?",
+    "options": [
+      "Primarily the Product Owner, supported by the whole Scrum Team",
+      "Only the Scrum Master",
+      "Only the Developers",
+      "The account manager"
+    ],
+    "correct": [0],
+    "explanation": "The Product Owner represents the needs of many stakeholders in the Product Backlog and is the primary point for stakeholder collaboration; the Scrum Master facilitates it as requested or needed."
+  },
+  {
+    "id": 134,
+    "category": "Scrum Team",
+    "text": "Which statement about the Scrum Team's focus is correct?",
+    "options": [
+      "The team works on several products at once to maximize utilization",
+      "The team focuses on one objective at a time: the Product Goal",
+      "Each Developer pursues a personal goal",
+      "Focus is only required during the last week of a Sprint"
+    ],
+    "correct": [1],
+    "explanation": "The Scrum Team is a cohesive unit of professionals focused on one objective at a time, the Product Goal."
   }
 ]
