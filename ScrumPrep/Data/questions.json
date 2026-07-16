@@ -2113,5 +2113,385 @@
     ],
     "correct": [1],
     "explanation": "The Sprint is a container for all other events. Each event in Scrum is a formal opportunity to inspect and adapt Scrum artifacts."
+  },
+  {
+    "id": 171,
+    "category": "Scrum Artifacts",
+    "text": "How long does the Product Backlog exist?",
+    "options": [
+      "Until the current release ships",
+      "As long as the product exists; it is never complete",
+      "For exactly one year",
+      "Until all items are Done"
+    ],
+    "correct": [1],
+    "explanation": "The Product Backlog is an emergent artifact: it evolves as the product and its environment evolve and exists as long as the product exists."
+  },
+  {
+    "id": 172,
+    "category": "Scrum Artifacts",
+    "text": "How many Product Backlogs exist for a product built by three Scrum Teams?",
+    "options": ["Three, one per team", "One", "Six, one per team plus integration backlogs", "As many as the Product Owner wants"],
+    "correct": [1],
+    "explanation": "A product has one Product Backlog, regardless of how many teams work on it. Multiple teams share the same Product Backlog, Product Goal, and Product Owner."
+  },
+  {
+    "id": 173,
+    "category": "Scrum Artifacts",
+    "text": "Which attributes are typically added to Product Backlog items during refinement?",
+    "options": [
+      "Assignee, deadline, and budget",
+      "Description, order, and size",
+      "Test protocol and release notes",
+      "Risk class and department code"
+    ],
+    "correct": [1],
+    "explanation": "Product Backlog refinement is the act of adding details, such as a description, order, and size. Attributes often vary with the domain of work."
+  },
+  {
+    "id": 174,
+    "category": "Scrum Artifacts",
+    "text": "What quality must every Increment have, regardless of whether the Product Owner decides to release it?",
+    "options": [
+      "It must be usable",
+      "It must be documented in the wiki",
+      "It must be demonstrated to management",
+      "It must be signed off by QA"
+    ],
+    "correct": [0],
+    "explanation": "An Increment must be usable. Work cannot be considered part of an Increment unless it meets the Definition of Done."
+  },
+  {
+    "id": 175,
+    "category": "Scrum Artifacts",
+    "text": "Who decides when to release an Increment to customers?",
+    "options": ["The Developers", "The Scrum Master", "The Product Owner", "The stakeholders vote"],
+    "correct": [2],
+    "explanation": "Releasing is a value decision, and the Product Owner is accountable for maximizing value. The Increment may be delivered at any time during the Sprint."
+  },
+  {
+    "id": 176,
+    "category": "Scrum Artifacts",
+    "text": "Is the Sprint Review a gate for releasing value?",
+    "options": [
+      "Yes, nothing may be released before the Review",
+      "No, the Sprint Review should never be considered a gate to releasing value",
+      "Yes, but only for major releases",
+      "Only if the Definition of Done says so"
+    ],
+    "correct": [1],
+    "explanation": "The Increment may be delivered to stakeholders prior to the end of the Sprint. The Sprint Review should never be considered a gate to releasing value."
+  },
+  {
+    "id": 177,
+    "category": "Scrum Artifacts",
+    "text": "What is the difference between the Definition of Done and acceptance criteria of a single item?",
+    "options": [
+      "There is no difference",
+      "The Definition of Done applies to every Increment as a product-wide quality standard; acceptance criteria are specific to an individual item",
+      "Acceptance criteria replace the Definition of Done in mature teams",
+      "The Definition of Done applies only to bugs"
+    ],
+    "correct": [1],
+    "explanation": "The Definition of Done is a formal, product-wide description of the quality state every Increment must meet. Acceptance criteria (a complementary practice) describe conditions for one specific item."
+  },
+  {
+    "id": 178,
+    "category": "Scrum Artifacts",
+    "text": "May work that is 95% complete but not Done be shown at the Sprint Review to collect feedback?",
+    "options": [
+      "Yes, feedback is always valuable",
+      "No; if it does not meet the Definition of Done, it cannot be released or even presented at the Sprint Review",
+      "Yes, if the Product Owner marks it as a preview",
+      "Only in the first Sprint"
+    ],
+    "correct": [1],
+    "explanation": "If a Product Backlog item does not meet the Definition of Done, it cannot be released or even presented at the Sprint Review. It returns to the Product Backlog."
+  },
+  {
+    "id": 179,
+    "category": "Scrum Artifacts",
+    "text": "What transparency does the Sprint Backlog provide?",
+    "options": [
+      "A yearly forecast for stakeholders",
+      "A highly visible, real-time picture of the work the Developers plan to accomplish during the Sprint",
+      "A record of hours worked per Developer",
+      "The company's release roadmap"
+    ],
+    "correct": [1],
+    "explanation": "The Sprint Backlog is a highly visible, real-time picture of the work that the Developers plan to accomplish during the Sprint in order to achieve the Sprint Goal."
+  },
+  {
+    "id": 180,
+    "category": "Scrum Artifacts",
+    "text": "How does the Scrum Guide define a product?",
+    "options": [
+      "A software application with a user interface",
+      "A vehicle to deliver value, with a clear boundary, known stakeholders, and well-defined users or customers; it could be a service, a physical product, or something more abstract",
+      "Anything with a budget over 100,000 euros",
+      "The output of a single Sprint"
+    ],
+    "correct": [1],
+    "explanation": "A product is a vehicle to deliver value. It has a clear boundary, known stakeholders, well-defined users or customers, and can be a service, a physical product, or something more abstract."
+  },
+  {
+    "id": 181,
+    "category": "Scrum Artifacts",
+    "text": "Why do the three artifact commitments (Product Goal, Sprint Goal, Definition of Done) exist?",
+    "options": [
+      "To satisfy audit requirements",
+      "To enhance transparency and focus, providing information against which progress can be measured, and to reinforce empiricism and the Scrum values",
+      "To replace the need for planning",
+      "To define individual performance targets"
+    ],
+    "correct": [1],
+    "explanation": "Each artifact contains a commitment to enhance transparency and focus against which progress can be measured. They reinforce empiricism and the Scrum values."
+  },
+  {
+    "id": 182,
+    "category": "Scrum Artifacts",
+    "text": "Are burn-down charts and velocity required by Scrum?",
+    "options": [
+      "Yes, both are mandatory artifacts",
+      "No, they are complementary practices that may be useful but do not replace the importance of empiricism",
+      "Only burn-down charts are mandatory",
+      "Only velocity is mandatory"
+    ],
+    "correct": [1],
+    "explanation": "Various practices exist to forecast progress, like burn-downs, burn-ups, or cumulative flows. While proven useful, these do not replace the importance of empiricism."
+  },
+  {
+    "id": 183,
+    "category": "Scrum Artifacts",
+    "text": "Management wants to compare teams by velocity. What should they know?",
+    "options": [
+      "Velocity is a standardized Scrum metric designed for comparisons",
+      "Velocity is not defined by Scrum; it is a team-internal complementary practice, and comparing it across teams is not meaningful",
+      "Only the Scrum Master may publish velocity",
+      "Velocity comparisons are valid after three Sprints"
+    ],
+    "correct": [1],
+    "explanation": "Velocity does not appear in the Scrum Guide at all; it is a complementary practice. Each team's numbers are relative to that team, so cross-team comparison drives dysfunction rather than insight."
+  },
+  {
+    "id": 184,
+    "category": "Scrum Artifacts",
+    "text": "Who may change the Sprint Backlog during the Sprint?",
+    "options": [
+      "Only the Product Owner",
+      "The Developers, as more is learned",
+      "Only the Scrum Master",
+      "Nobody; it is frozen after Sprint Planning"
+    ],
+    "correct": [1],
+    "explanation": "The Sprint Backlog is a plan by and for the Developers and is updated by them throughout the Sprint as more is learned."
+  },
+  {
+    "id": 185,
+    "category": "Scrum Artifacts",
+    "text": "How does the Scrum Guide describe an Increment in relation to the Product Goal?",
+    "options": [
+      "An Increment is a concrete stepping stone toward the Product Goal",
+      "An Increment equals one Product Backlog item",
+      "An Increment is the yearly release",
+      "An Increment is whatever the stakeholders accept"
+    ],
+    "correct": [0],
+    "explanation": "Each Increment is a concrete stepping stone toward the Product Goal, additive to all prior Increments, and thoroughly verified to work together."
+  },
+  {
+    "id": 186,
+    "category": "Scrum Artifacts",
+    "text": "On the last day of the Sprint, an item is almost finished but a Definition of Done criterion is unmet. What happens to it?",
+    "options": [
+      "It counts as Done because it is nearly complete",
+      "It returns to the Product Backlog for future consideration",
+      "The Definition of Done is temporarily relaxed",
+      "The Sprint is extended until the item is Done"
+    ],
+    "correct": [1],
+    "explanation": "Work that does not meet the Definition of Done is not part of the Increment. The item returns to the Product Backlog for future consideration."
+  },
+  {
+    "id": 187,
+    "category": "Scrum Artifacts",
+    "text": "No organizational standard for a Definition of Done exists. Who creates one?",
+    "options": [
+      "The Product Owner alone",
+      "The Scrum Team creates a Definition of Done appropriate for the product",
+      "The Scrum Master copies one from the internet",
+      "The stakeholders"
+    ],
+    "correct": [1],
+    "explanation": "If the Definition of Done is not an organizational standard, the Scrum Team must create one appropriate for the product."
+  },
+  {
+    "id": 188,
+    "category": "Scrum Artifacts",
+    "text": "How do multiple Scrum Teams on one product ensure their combined work is usable?",
+    "options": [
+      "Each team releases separately",
+      "By mutually defining and complying with the same Definition of Done so their Increments integrate",
+      "By adding an integration Sprint at the end",
+      "By letting the most senior team merge everything"
+    ],
+    "correct": [1],
+    "explanation": "Multiple teams working together on a product must mutually define and comply with the same Definition of Done, so the combined Increment is verified and usable."
+  },
+  {
+    "id": 189,
+    "category": "Scrum Artifacts",
+    "text": "What flexibility does the Sprint Goal give the Developers?",
+    "options": [
+      "None; it fixes the exact items to deliver",
+      "It creates focus on one objective while leaving flexibility in the exact work needed to achieve it",
+      "It allows skipping the Definition of Done",
+      "It allows extending the Sprint"
+    ],
+    "correct": [1],
+    "explanation": "The Sprint Goal creates coherence and focus, encouraging the Scrum Team to work together rather than on separate initiatives, while allowing flexibility in the exact work."
+  },
+  {
+    "id": 190,
+    "category": "Scrum Artifacts",
+    "text": "On what basis does the Product Owner order the Product Backlog?",
+    "options": [
+      "Strictly by estimated size, smallest first",
+      "However the Product Owner decides best achieves goals and maximizes value, e.g. considering value, risk, and dependencies",
+      "By the date items were created",
+      "By stakeholder seniority"
+    ],
+    "correct": [1],
+    "explanation": "Scrum does not prescribe an ordering formula. The Product Owner orders the backlog to maximize the value of the product, weighing factors like value, risk, cohesion, and dependencies."
+  },
+  {
+    "id": 191,
+    "category": "Scrum Artifacts",
+    "text": "Who must understand the Product Backlog items, and who ensures this?",
+    "options": [
+      "Only the Product Owner needs to understand them",
+      "The Product Owner ensures the Product Backlog is transparent, visible, and understood",
+      "The Scrum Master rewrites all items for clarity",
+      "Understanding is checked by stakeholders at the Review"
+    ],
+    "correct": [1],
+    "explanation": "Effective Product Backlog management includes ensuring that the Product Backlog is transparent, visible, and understood."
+  },
+  {
+    "id": 192,
+    "category": "Scrum Artifacts",
+    "text": "A stakeholder asks exactly when a specific Product Backlog item will be delivered. What is the most honest Scrum-based answer?",
+    "options": [
+      "A guaranteed date from the project plan",
+      "A forecast based on the backlog order and past performance, updated empirically each Sprint",
+      "No answer; Scrum forbids forecasting",
+      "Whatever date makes the stakeholder happy"
+    ],
+    "correct": [1],
+    "explanation": "Scrum allows forecasting based on the ordered Product Backlog and past performance, but as empirical work proceeds, forecasts are revised. Guarantees contradict empiricism in complex work."
+  },
+  {
+    "id": 193,
+    "category": "Scrum Artifacts",
+    "text": "Can an Increment be delivered to users before the Sprint Review takes place?",
+    "options": [
+      "No, the Review must approve it first",
+      "Yes, Increments may be delivered to stakeholders at any time during the Sprint",
+      "Only with the Scrum Master's approval",
+      "Only in the last Sprint of a quarter"
+    ],
+    "correct": [1],
+    "explanation": "Multiple Increments may be created within a Sprint, and the sum may be delivered to stakeholders prior to the end of the Sprint. The Review is not a release gate."
+  },
+  {
+    "id": 194,
+    "category": "Scrum Artifacts",
+    "text": "Can required documentation be part of the Definition of Done?",
+    "options": [
+      "No, Scrum forbids documentation",
+      "Yes, the Definition of Done contains whatever quality measures the product requires, which can include documentation",
+      "Only for regulated industries with a special Scrum variant",
+      "Documentation is always a separate Product Backlog item"
+    ],
+    "correct": [1],
+    "explanation": "The Definition of Done describes the quality state the Increment must meet. If the product requires documentation, it belongs in the Definition of Done."
+  },
+  {
+    "id": 195,
+    "category": "Scrum Artifacts",
+    "text": "Must the Sprint Backlog contain an improvement item from the last Retrospective?",
+    "options": [
+      "Yes, the Scrum Guide mandates at least one",
+      "No; improvements may be added to the Sprint Backlog, but the 2020 Scrum Guide does not mandate it",
+      "Yes, exactly three improvements",
+      "Only if the Scrum Master insists"
+    ],
+    "correct": [1],
+    "explanation": "The 2020 Scrum Guide says impactful improvements may even be added to the Sprint Backlog for the next Sprint; the earlier mandate (from the 2017 guide) was removed."
+  },
+  {
+    "id": 196,
+    "category": "Scrum Artifacts",
+    "text": "Does Scrum prescribe an estimation technique such as story points or planning poker?",
+    "options": [
+      "Yes, story points are mandatory",
+      "No; sizing is up to the Developers, and Scrum prescribes no specific technique",
+      "Yes, planning poker is part of Sprint Planning",
+      "Estimation is prohibited in Scrum"
+    ],
+    "correct": [1],
+    "explanation": "Scrum does not prescribe estimation techniques. Story points and planning poker are complementary practices; the Developers who do the work are responsible for sizing."
+  },
+  {
+    "id": 197,
+    "category": "Scrum Artifacts",
+    "text": "What must be true about a Product Backlog item before it is selected in Sprint Planning?",
+    "options": [
+      "It has a signed specification",
+      "The Scrum Team deems it ready: it can be Done within one Sprint, usually achieved through refinement",
+      "It has been estimated in hours",
+      "It was announced to stakeholders"
+    ],
+    "correct": [1],
+    "explanation": "Product Backlog items that can be Done by the Scrum Team within one Sprint are deemed ready for selection in Sprint Planning, which they usually acquire through refining activities."
+  },
+  {
+    "id": 198,
+    "category": "Scrum Artifacts",
+    "text": "At the Sprint Review, stakeholders say the Done Increment is not what the market needs anymore. What happens?",
+    "options": [
+      "The Increment is deleted and the Sprint counts as failed",
+      "The feedback flows into the Product Backlog, which the Product Owner adapts; the Increment remains Done",
+      "The Developers redo the work in a special correction Sprint",
+      "The Definition of Done is loosened"
+    ],
+    "correct": [1],
+    "explanation": "The Sprint Review exists exactly for this inspection: the Product Backlog is adapted based on feedback and market changes. A Done Increment stays Done; the learning shapes future work."
+  },
+  {
+    "id": 199,
+    "category": "Scrum Artifacts",
+    "text": "Which statement about the Product Goal and planning is correct?",
+    "options": [
+      "The Product Goal is the long-term objective the Scrum Team can plan against",
+      "The Product Goal changes every Sprint",
+      "The Product Goal is set by stakeholders at the Sprint Review",
+      "The Product Goal is another name for the release plan"
+    ],
+    "correct": [0],
+    "explanation": "The Product Goal describes a future state of the product which can serve as a target for the Scrum Team to plan against. It is the long-term objective, living in the Product Backlog."
+  },
+  {
+    "id": 200,
+    "category": "Scrum Artifacts",
+    "text": "Why is 'technical debt hidden inside the Increment' a transparency problem?",
+    "options": [
+      "It is not a problem as long as features work",
+      "The perceived state of the artifact differs from its real state, so decisions based on it may diminish value and increase risk",
+      "Technical debt only concerns the Scrum Master",
+      "Because auditors might find it"
+    ],
+    "correct": [1],
+    "explanation": "Artifacts must transparently represent the real state of the work. Hidden technical debt makes the Increment's perceived state misleading, undermining the decisions built on it."
   }
 ]
