@@ -72,6 +72,7 @@ public class ResultViewModel : ViewModelBase
     {
         QuizMode.Exam => "Exam Result",
         QuizMode.Topic => $"Topic Training Result – {Record.Category}",
+        QuizMode.Mistakes => "Mistake Training Result",
         _ => "Learn Session Result"
     };
 

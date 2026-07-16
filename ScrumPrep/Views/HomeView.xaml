@@ -16,9 +16,18 @@
             </TextBlock>
         </StackPanel>
 
-        <UniformGrid Grid.Row="1" Columns="2" VerticalAlignment="Top">
+        <Grid Grid.Row="1" VerticalAlignment="Top">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
 
-            <Border Style="{StaticResource Card}" Margin="0,0,10,20">
+            <Border Grid.Row="0" Grid.Column="0" Style="{StaticResource Card}" Margin="0,0,10,20">
                 <StackPanel>
                     <TextBlock Text="Exam Simulation" FontSize="18" FontWeight="SemiBold"/>
                     <TextBlock Style="{StaticResource MutedText}" TextWrapping="Wrap" Margin="0,8,0,16"
@@ -28,7 +37,7 @@
                 </StackPanel>
             </Border>
 
-            <Border Style="{StaticResource Card}" Margin="10,0,0,20">
+            <Border Grid.Row="0" Grid.Column="1" Style="{StaticResource Card}" Margin="10,0,0,20">
                 <StackPanel>
                     <TextBlock Text="Learn Mode" FontSize="18" FontWeight="SemiBold"/>
                     <TextBlock Style="{StaticResource MutedText}" TextWrapping="Wrap" Margin="0,8,0,16"
@@ -38,7 +47,7 @@
                 </StackPanel>
             </Border>
 
-            <Border Style="{StaticResource Card}" Margin="0,0,10,20">
+            <Border Grid.Row="1" Grid.Column="0" Style="{StaticResource Card}" Margin="0,0,10,20">
                 <StackPanel>
                     <TextBlock Text="Topic Training" FontSize="18" FontWeight="SemiBold"/>
                     <TextBlock Style="{StaticResource MutedText}" TextWrapping="Wrap" Margin="0,8,0,12"
@@ -50,7 +59,19 @@
                 </StackPanel>
             </Border>
 
-            <Border Style="{StaticResource Card}" Margin="10,0,0,20">
+            <Border Grid.Row="1" Grid.Column="1" Style="{StaticResource Card}" Margin="10,0,0,20">
+                <StackPanel>
+                    <TextBlock Text="Mistake Training" FontSize="18" FontWeight="SemiBold"/>
+                    <TextBlock Style="{StaticResource MutedText}" TextWrapping="Wrap" Margin="0,8,0,4"
+                               Text="Retry the questions you last answered incorrectly. A question leaves this pool once you answer it correctly."/>
+                    <TextBlock Text="{Binding MistakeHint}" FontSize="12" FontWeight="SemiBold"
+                               Foreground="#EF6C00" Margin="0,0,0,12"/>
+                    <Button Content="Train Mistakes" Style="{StaticResource PrimaryButton}"
+                            HorizontalAlignment="Left" Command="{Binding StartMistakesCommand}"/>
+                </StackPanel>
+            </Border>
+
+            <Border Grid.Row="2" Grid.Column="0" Style="{StaticResource Card}" Margin="0,0,10,20">
                 <StackPanel>
                     <TextBlock Text="Statistics" FontSize="18" FontWeight="SemiBold"/>
                     <TextBlock Style="{StaticResource MutedText}" TextWrapping="Wrap" Margin="0,8,0,16"
@@ -60,6 +81,6 @@
                 </StackPanel>
             </Border>
 
-        </UniformGrid>
+        </Grid>
     </Grid>
 </UserControl>

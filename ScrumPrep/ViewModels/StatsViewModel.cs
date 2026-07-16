@@ -13,6 +13,7 @@ public class SessionSummary
         {
             QuizMode.Exam => "Exam",
             QuizMode.Topic => $"Topic ({record.Category})",
+            QuizMode.Mistakes => "Mistakes",
             _ => "Learn"
         };
         Score = $"{record.CorrectCount}/{record.Total}";

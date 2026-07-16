@@ -38,6 +38,20 @@ public class StatsService
         Save();
     }
 
+    /// <summary>
+    /// IDs aller Fragen, deren jüngste Antwort falsch war. Eine Frage verlässt den
+    /// Pool, sobald sie in irgendeinem Modus wieder richtig beantwortet wurde.
+    /// </summary>
+    public HashSet<int> CurrentMistakeIds()
+    {
+        var latestAnswer = new Dictionary<int, bool>();
+        foreach (var record in _history.OrderBy(r => r.Date))
+            foreach (var answer in record.Answers)
+                latestAnswer[answer.QuestionId] = answer.WasCorrect;
+
+        return latestAnswer.Where(kv => !kv.Value).Select(kv => kv.Key).ToHashSet();
+    }
+
     private List<SessionRecord> Load()
     {
         if (!File.Exists(_filePath))

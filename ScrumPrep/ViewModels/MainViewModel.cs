@@ -27,10 +27,10 @@ public class MainViewModel : ViewModelBase
         }
     }
 
-    public void ShowHome() => CurrentViewModel = new HomeViewModel(this, _repository);
+    public void ShowHome() => CurrentViewModel = new HomeViewModel(this, _repository, _stats);
 
     public void StartQuiz(QuizMode mode, string? category = null) =>
-        CurrentViewModel = new QuizViewModel(this, _repository, mode, category);
+        CurrentViewModel = new QuizViewModel(this, _repository, _stats, mode, category);
 
     public void ShowResult(SessionRecord record, List<Question> questions, Dictionary<int, List<int>> givenAnswers)
     {

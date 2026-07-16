@@ -4,7 +4,8 @@ public enum QuizMode
 {
     Exam,
     Learn,
-    Topic
+    Topic,
+    Mistakes
 }
 
 /// <summary>Ergebnis einer einzelnen beantworteten Frage, wird für die Statistik gespeichert.</summary>

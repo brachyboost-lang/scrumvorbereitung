@@ -26,7 +26,8 @@ public class QuizViewModel : ViewModelBase
     private string _timeRemainingText = "";
     private bool _isRevealed;
 
-    public QuizViewModel(MainViewModel main, QuestionRepository repository, QuizMode mode, string? category)
+    public QuizViewModel(MainViewModel main, QuestionRepository repository, StatsService stats,
+        QuizMode mode, string? category)
     {
         _main = main;
         Mode = mode;
@@ -36,6 +37,8 @@ public class QuizViewModel : ViewModelBase
         {
             QuizMode.Exam => repository.RandomExamSet(ExamQuestionCount),
             QuizMode.Topic => QuestionRepository.Shuffled(repository.ByCategory(category!)),
+            QuizMode.Mistakes => QuestionRepository.Shuffled(
+                repository.All.Where(q => stats.CurrentMistakeIds().Contains(q.Id))),
             _ => QuestionRepository.Shuffled(repository.All)
         };
 
@@ -67,6 +70,7 @@ public class QuizViewModel : ViewModelBase
     {
         QuizMode.Exam => "Exam Simulation",
         QuizMode.Topic => $"Topic Training – {Category}",
+        QuizMode.Mistakes => "Mistake Training",
         _ => "Learn Mode"
     };
 
