@@ -40,6 +40,25 @@ oder nach einem `dotnet build` direkt die Exe ausführen:
 - **Lernfortschritt:** wird unter `%APPDATA%\ScrumPrep\history.json` gespeichert und kann in der
   App über *Statistics → Clear History* zurückgesetzt werden.
 
+## Arbeitsweise
+
+**KI-gestützt entwickelt** (Claude Code als Programmierassistenz), was die
+Commit-History ausweist.
+
+Die App ist aus dem eigenen Bedarf entstanden, das PSM-I-Assessment unter
+Prüfungsbedingungen zu üben. Entsprechend bildet die Simulation den echten Rahmen
+ab: 80 Fragen, 60 Minuten, Bestehensgrenze 85 %. Das Mistake Training wiederholt
+gezielt die zuletzt falsch beantworteten Fragen, bis sie einmal sitzen — beim
+Lernen bringt das mehr, als den ganzen Katalog erneut durchzugehen.
+
+Der Fragenkatalog liegt als einzelne JSON-Datei vor und ist bewusst ohne Code
+erweiterbar: Eine Frage mit mehreren richtigen Indizes in `correct` wird
+automatisch zur Mehrfachauswahl.
+
+Dieselbe Struktur nutze ich in [GpmPrep](https://github.com/brachyboost-lang/gpmvorbereitung)
+für das GPM-Basiszertifikat. Ein Gegenbeispiel ohne KI-Unterstützung ist mein
+[Python-Abschlussprojekt](https://github.com/brachyboost-lang/PythonAbschlussProjekt).
+
 ## Hinweis
 
 Die Fragen sind selbst formuliert und keine echten Prüfungsfragen. Als Gegenprobe vor der
